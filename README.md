@@ -10,11 +10,13 @@ Save programs as: filename.cpp
 Windows:
 
 g++ file.cpp -o file.exe
+
 file.exe
 
 Linux/Mac:
 
 g++ file.cpp -o file
+
 ./file
 
 
