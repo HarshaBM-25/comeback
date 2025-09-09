@@ -29,12 +29,17 @@ Definition: The first basic program in C++ that prints output.
 Syntax:
 
 #include <iostream>
+
 using namespace std;
+
 int main(){
+
     cout << "Hello World";
+    
 }
 
 Output:
+
 
 Hello World
 
@@ -62,9 +67,13 @@ Definition: Variables store data. Each type decides the kind of data.
 Syntax:
 
 int a=10;    // integer
+
 float b=3.14; // decimal
+
 char c='A';   // character
+
 bool d=true;  // boolean
+
 
 
 ---
@@ -76,8 +85,12 @@ Types: Arithmetic (+, -, *, /, %), Relational (==, !=, <, >), Logical (&&, ||, !
 Example:
 
 int a=10, b=3;
+
 cout << a/b;   // 3
+
 cout << a%b;   // 1
+
+
 
 
 ---
@@ -115,9 +128,12 @@ switch(a){
 Definition: Used to repeat tasks.
 Syntax & Example:
 
-for(int i=0;i<5;i++) cout<<i;    // 0 1 2 3 4
+for(int i=0;i<5;i++) cout<<i; // 0 1 2 3 4
+
 while(a>0){ cout<<a--; }         // while loop
+
 do{ cout<<a; }while(a>0);        // do-while loop
+
 
 
 ---
@@ -128,8 +144,11 @@ Definition: A loop inside another loop.
 Example:
 
 for(int i=1;i<=2;i++)
+
   for(int j=1;j<=2;j++)
+  
     cout<<i<<","<<j<<" ";
+    
 
 Output:
 
@@ -144,13 +163,18 @@ Definition:
 
 break → exits the loop
 
+
 continue → skips current iteration
+
 Example:
 
 
 for(int i=1;i<=5;i++){
+
   if(i==3) continue;
+  
   if(i==5) break;
+  
   cout<<i<<" "; // 1 2 4
 }
 
@@ -169,6 +193,7 @@ returnType functionName(parameters){
 Example:
 
 int add(int a,int b){ return a+b; }
+
 int main(){ cout<<add(3,4); } // 7
 
 
@@ -184,6 +209,7 @@ datatype arrayName[size];
 Example:
 
 int arr[3]={10,20,30};
+
 for(int i=0;i<3;i++) cout<<arr[i];
 
 
@@ -199,7 +225,9 @@ string str = "Hello";
 Example:
 
 string s="Harsha";
-cout<<s.length();    // 6
+
+cout<<s.length();   // 6
+
 cout<<s.substr(1,3); // ars
 
 
@@ -211,8 +239,11 @@ Definition: Useful methods to modify and check strings.
 Examples:
 
 getline(cin,s);             // input full line
+
 s.append(" BM");            // add text
+
 s.erase(0,1);               // remove char at pos
+
 cout<<s.compare("Hello");   // 0 if equal
 
 
@@ -228,10 +259,13 @@ datatype* ptr;
 Example:
 
 int a=10;
+
 int* p=&a;
+
 cout<<*p;   // 10
 
 int arr[3]={1,2,3};
+
 cout<<*(arr+1); // 2
 
 
